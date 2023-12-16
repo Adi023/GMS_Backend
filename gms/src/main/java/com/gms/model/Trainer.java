@@ -7,6 +7,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name="trainer_info")
 public class Trainer {
+	
 	@Id
 	private long trainer_id;
 	private String trainer_name;
