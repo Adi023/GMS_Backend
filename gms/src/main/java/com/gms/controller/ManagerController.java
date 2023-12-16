@@ -19,7 +19,7 @@ public class ManagerController {
 	ManagerServices managerServices;
 	
 	@GetMapping("/manager")
-	public Iterable<Manager> getAdmin(){
+	public Iterable<Manager> getManager(){
 		return managerServices.view_manager();
 	}
 	
