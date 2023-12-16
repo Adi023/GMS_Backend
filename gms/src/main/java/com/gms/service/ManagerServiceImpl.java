@@ -51,6 +51,9 @@ public class ManagerServiceImpl implements ManagerServices{
 		a.setManagerId(manager.getManagerId());
 		a.setManagerName(manager.getManagerName());
 		a.setManagerPassword(manager.getManagerPassword());
+		a.setManagerBloodGroup(manager.getManagerBloodGroup());
+		a.setManagerEmailid(manager.getManagerEmailid());
+		a.setManagerMobileNumber(manager.getManagerMobileNumber());
 		
 		
 		a=managerDao.save(a);
