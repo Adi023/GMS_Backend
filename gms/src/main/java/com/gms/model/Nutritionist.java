@@ -9,65 +9,119 @@ import jakarta.persistence.Table;
 public class Nutritionist {
 
 	@Id
-	private long nutri_id;
-	private String nutri_name;
-	private String nutri_password;
-    private String nutri_email;
-    private String nutri_mobilenumber;
-    private String nutri_address;
+	private long nutritionistId;
+	private String nutritionistName;
+	private String nutritionistPassword;
+    private String nutritionistEmail;
+    private int nutritionistMobilenumber;
+    private String nutritionistAddress;
+    private String nutritionistSpecialization;
+    private String nutritionistCertification;
+    private String nutritionistAvailability;
+    private double nutritionistConsultationFees;
     
-    @Override
+    
+   
+   
+	@Override
 	public String toString() {
-		return "Nutritionist [nutri_id=" + nutri_id + ", nutri_name=" + nutri_name + ", nutri_password="
-				+ nutri_password + ", nutri_email=" + nutri_email + ", nutri_mobilenumber=" + nutri_mobilenumber
-				+ ", nutri_address=" + nutri_address + "]";
+		return "Nutritionist [nutritionistId=" + nutritionistId + ", nutritionistName=" + nutritionistName
+				+ ", nutritionistPassword=" + nutritionistPassword + ", nutritionistEmail=" + nutritionistEmail
+				+ ", nutritionistMobilenumber=" + nutritionistMobilenumber + ", nutritionistAddress="
+				+ nutritionistAddress + ", nutritionistSpecialization=" + nutritionistSpecialization
+				+ ", nutritionistCertification=" + nutritionistCertification + ", nutritionistAvailability="
+				+ nutritionistAvailability + ", nutritionistConsultationFees=" + nutritionistConsultationFees + "]";
 	}
-	public Nutritionist(long nutri_id, String nutri_name, String nutri_password, String nutri_email,
-			String nutri_mobilenumber, String nutri_address) {
-		super();
-		this.nutri_id = nutri_id;
-		this.nutri_name = nutri_name;
-		this.nutri_password = nutri_password;
-		this.nutri_email = nutri_email;
-		this.nutri_mobilenumber = nutri_mobilenumber;
-		this.nutri_address = nutri_address;
+
+
+
+
+	public Nutritionist(long nutritionistId, String nutritionistName, String nutritionistPassword, String nutritionistEmail,
+		int nutritionistMobilenumber, String nutritionistAddress, String nutritionistSpecialization,
+		String nutritionistCertification, String nutritionistAvailability, double nutritionistConsultationFees) {
+	super();
+	this.nutritionistId = nutritionistId;
+	this.nutritionistName = nutritionistName;
+	this.nutritionistPassword = nutritionistPassword;
+	this.nutritionistEmail = nutritionistEmail;
+	this.nutritionistMobilenumber = nutritionistMobilenumber;
+	this.nutritionistAddress = nutritionistAddress;
+	this.nutritionistSpecialization = nutritionistSpecialization;
+	this.nutritionistCertification = nutritionistCertification;
+	this.nutritionistAvailability = nutritionistAvailability;
+	this.nutritionistConsultationFees = nutritionistConsultationFees;
+}
+
+
+
+
+	public long getNutritionistId() {
+		return nutritionistId;
 	}
-	public long getNutri_id() {
-		return nutri_id;
+	public void setNutritionistId(long nutritionistId) {
+		this.nutritionistId = nutritionistId;
 	}
-	public void setNutri_id(long nutri_id) {
-		this.nutri_id = nutri_id;
+	public String getNutritionistName() {
+		return nutritionistName;
 	}
-	public String getNutri_name() {
-		return nutri_name;
+	public void setNutritionistName(String nutritionistName) {
+		this.nutritionistName = nutritionistName;
 	}
-	public void setNutri_name(String nutri_name) {
-		this.nutri_name = nutri_name;
+	public String getNutritionistPassword() {
+		return nutritionistPassword;
 	}
-	public String getNutri_password() {
-		return nutri_password;
+	public void setNutritionistPassword(String nutritionistPassword) {
+		this.nutritionistPassword = nutritionistPassword;
 	}
-	public void setNutri_password(String nutri_password) {
-		this.nutri_password = nutri_password;
+	public String getNutritionistEmail() {
+		return nutritionistEmail;
 	}
-	public String getNutri_email() {
-		return nutri_email;
+	public void setNutritionistEmail(String nutritionistEmail) {
+		this.nutritionistEmail = nutritionistEmail;
 	}
-	public void setNutri_email(String nutri_email) {
-		this.nutri_email = nutri_email;
+	public int getNutritionistMobilenumber() {
+		return nutritionistMobilenumber;
 	}
-	public String getNutri_mobilenumber() {
-		return nutri_mobilenumber;
+	public void setNutritionistMobilenumber(int nutritionistMobilenumber) {
+		this.nutritionistMobilenumber = nutritionistMobilenumber;
 	}
-	public void setNutri_mobilenumber(String nutri_mobilenumber) {
-		this.nutri_mobilenumber = nutri_mobilenumber;
+	public String getNutritionistAddress() {
+		return nutritionistAddress;
 	}
-	public String getNutri_address() {
-		return nutri_address;
+	public void setNutritionistAddress(String nutritionistAddress) {
+		this.nutritionistAddress = nutritionistAddress;
 	}
-	public void setNutri_address(String nutri_address) {
-		this.nutri_address = nutri_address;
+	public String getNutritionistSpecialization() {
+		return nutritionistSpecialization;
 	}
+	public void setNutritionistSpecialization(String nutritionistSpecialization) {
+		this.nutritionistSpecialization = nutritionistSpecialization;
+	}
+	public String getNutritionistCertification() {
+		return nutritionistCertification;
+	}
+	public void setNutritionistCertification(String nutritionistCertification) {
+		this.nutritionistCertification = nutritionistCertification;
+	}
+	public String getNutritionistAvailability() {
+		return nutritionistAvailability;
+	}
+	public void setNutritionistAvailability(String nutritionistAvailability) {
+		this.nutritionistAvailability = nutritionistAvailability;
+	}
+	public double getNutritionistConsultationFees() {
+		return nutritionistConsultationFees;
+	}
+	public void setNutritionistConsultationFees(double nutritionistConsultationFees) {
+		this.nutritionistConsultationFees = nutritionistConsultationFees;
+	}
+	
+	
+    
+    
+    
+	
+    
     
     
     

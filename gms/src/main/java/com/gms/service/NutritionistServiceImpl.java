@@ -43,18 +43,18 @@ public class NutritionistServiceImpl implements NutritionistServices{
 	@Override
 	public Nutritionist update_nutritionist(Nutritionist nutritionist) {
 		
-		Optional <Nutritionist> adm=nutritionistDao.findById(nutritionist.getNutri_id());
+		Optional <Nutritionist> adm=nutritionistDao.findById(nutritionist.getNutritionistId());
 		
 		Nutritionist a=adm.get();
 		
-		a.setNutri_id(nutritionist.getNutri_id());
-		a.setNutri_name(nutritionist.getNutri_name());
-		a.setNutri_password(nutritionist.getNutri_password());
-		a.setNutri_email(nutritionist.getNutri_email());
-		a.setNutri_mobilenumber(nutritionist.getNutri_mobilenumber());
+		a.setNutritionistId(nutritionist.getNutritionistId());
+		a.setNutritionistName(nutritionist.getNutritionistName());
+		a.setNutritionistPassword(nutritionist.getNutritionistPassword());
+		a.setNutritionistEmail(nutritionist.getNutritionistEmail());
+		a.setNutritionistMobilenumber(nutritionist.getNutritionistMobilenumber());
 		
 		
-		
+	
 		a=nutritionistDao.save(a);
 		
 		return a;

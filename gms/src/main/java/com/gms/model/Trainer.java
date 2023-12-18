@@ -9,57 +9,105 @@ import jakarta.persistence.Table;
 public class Trainer {
 	
 	@Id
-	private long trainer_id;
-	private String trainer_name;
-	private String trainer_password;
-    private String trainer_email;
-    private String trainer_mobilenumber;
+	private long trainerId;
+	private String trainerName;
+	private String trainerPassword;
+    private String trainerEmailId;
+    private String trainerMobilenumber;
+    private String trainerCertification;
+    private String trainerSpecialization;
+    private String trainerExperienceYears;
+    private String trainerHireDate;
+    private String trainerSalary;
     
+    
+   
 	@Override
 	public String toString() {
-		return "Trainer [trainer_id=" + trainer_id + ", trainer_name=" + trainer_name + ", trainer_password="
-				+ trainer_password + ", trainer_emial=" + trainer_email + ", trainer_mobilenumber="
-				+ trainer_mobilenumber + "]";
+		return "Trainer [trainerId=" + trainerId + ", trainerName=" + trainerName + ", trainerPassword="
+				+ trainerPassword + ", trainerEmailId=" + trainerEmailId + ", trainerMobilenumber="
+				+ trainerMobilenumber + ", trainerCertification=" + trainerCertification + ", trainerSpecialization="
+				+ trainerSpecialization + ", trainerExperienceYears=" + trainerExperienceYears + ", trainerHireDate="
+				+ trainerHireDate + ", trainerSalary=" + trainerSalary + "]";
 	}
-	public Trainer(long trainer_id, String trainer_name, String trainer_password, String trainer_emial,
-			String trainer_mobilenumber) {
+	public Trainer(long trainerId, String trainerName, String trainerPassword, String trainerEmailId,
+			String trainerMobilenumber, String trainerCertification, String trainerSpecialization,
+			String trainerExperienceYears, String trainerHireDate, String trainerSalary) {
 		super();
-		this.trainer_id = trainer_id;
-		this.trainer_name = trainer_name;
-		this.trainer_password = trainer_password;
-		this.trainer_email = trainer_emial;
-		this.trainer_mobilenumber = trainer_mobilenumber;
+		this.trainerId = trainerId;
+		this.trainerName = trainerName;
+		this.trainerPassword = trainerPassword;
+		this.trainerEmailId = trainerEmailId;
+		this.trainerMobilenumber = trainerMobilenumber;
+		this.trainerCertification = trainerCertification;
+		this.trainerSpecialization = trainerSpecialization;
+		this.trainerExperienceYears = trainerExperienceYears;
+		this.trainerHireDate = trainerHireDate;
+		this.trainerSalary = trainerSalary;
 	}
-	public long getTrainer_id() {
-		return trainer_id;
+	public long getTrainerId() {
+		return trainerId;
 	}
-	public void setTrainer_id(long trainer_id) {
-		this.trainer_id = trainer_id;
+	public void setTrainerId(long trainerId) {
+		this.trainerId = trainerId;
 	}
-	public String getTrainer_name() {
-		return trainer_name;
+	public String getTrainerName() {
+		return trainerName;
 	}
-	public void setTrainer_name(String trainer_name) {
-		this.trainer_name = trainer_name;
+	public void setTrainerName(String trainerName) {
+		this.trainerName = trainerName;
 	}
-	public String getTrainer_password() {
-		return trainer_password;
+	public String getTrainerPassword() {
+		return trainerPassword;
 	}
-	public void setTrainer_password(String trainer_password) {
-		this.trainer_password = trainer_password;
+	public void setTrainerPassword(String trainerPassword) {
+		this.trainerPassword = trainerPassword;
 	}
-	public String getTrainer_email() {
-		return trainer_email;
+	public String getTrainerEmailId() {
+		return trainerEmailId;
 	}
-	public void setTrainer_email(String trainer_email) {
-		this.trainer_email = trainer_email;
+	public void setTrainerEmailId(String trainerEmailId) {
+		this.trainerEmailId = trainerEmailId;
 	}
-	public String getTrainer_mobilenumber() {
-		return trainer_mobilenumber;
+	public String getTrainerMobilenumber() {
+		return trainerMobilenumber;
 	}
-	public void setTrainer_mobilenumber(String trainer_mobilenumber) {
-		this.trainer_mobilenumber = trainer_mobilenumber;
+	public void setTrainerMobilenumber(String trainerMobilenumber) {
+		this.trainerMobilenumber = trainerMobilenumber;
 	}
+	public String getTrainerCertification() {
+		return trainerCertification;
+	}
+	public void setTrainerCertification(String trainerCertification) {
+		this.trainerCertification = trainerCertification;
+	}
+	public String getTrainerSpecialization() {
+		return trainerSpecialization;
+	}
+	public void setTrainerSpecialization(String trainerSpecialization) {
+		this.trainerSpecialization = trainerSpecialization;
+	}
+	public String getTrainerExperienceYears() {
+		return trainerExperienceYears;
+	}
+	public void setTrainerExperienceYears(String trainerExperienceYears) {
+		this.trainerExperienceYears = trainerExperienceYears;
+	}
+	public String getTrainerHireDate() {
+		return trainerHireDate;
+	}
+	public void setTrainerHireDate(String trainerHireDate) {
+		this.trainerHireDate = trainerHireDate;
+	}
+	public String getTrainerSalary() {
+		return trainerSalary;
+	}
+	public void setTrainerSalary(String trainerSalary) {
+		this.trainerSalary = trainerSalary;
+	}
+    
+    
+	
     
     
 }
