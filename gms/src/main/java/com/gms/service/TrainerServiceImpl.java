@@ -38,22 +38,23 @@ public class TrainerServiceImpl implements TrainerServices {
 		return trainerDao.findAll();
 	}
 
-//	@Override
-//	public Trainer update_trainer(Trainer trainer) {
-		
-//		Optional <Trainer> adm=trainerDao.findById(trainer.getTrainer_id());
-		
-//		Trainer a=adm.get();
-		
-//		a.setTrainer_id(trainer.getTrainer_id());
-//		a.setTrainer_name(trainer.getTrainer_name());
-//		a.setTrainer_password(trainer.getTrainer_password());
-//		a.setTrainer_email(trainer.getTrainer_email());
-//		a.setTrainer_mobilenumber(trainer.getTrainer_mobilenumber());
-//		
-		
-//		a=trainerDao.save(a);
-//		
-//		return a;
 
+	@Override
+	public Trainer update_trainer(Trainer trainer) {
+		
+		Optional <Trainer> adm=trainerDao.findById(trainer.getTrainerId());
+		
+		Trainer a=adm.get();
+		
+		a.setTrainerId(trainer.getTrainerId());
+		a.setTrainerName(trainer.getTrainerName());
+		a.setTrainerPassword(trainer.getTrainerPassword());
+		a.setTrainerEmailId(trainer.getTrainerEmailId());
+		a.setTrainerMobilenumber(trainer.getTrainerMobilenumber());
+		
+		
+		a=trainerDao.save(a);
+		
+		return a;
+	}
 }
